@@ -39,7 +39,7 @@ Para contribuir com este projeto, siga os passos abaixo(IMPORTANTE: Antes de seg
 ```
 git checkout main
 git pull origin main
-git checkout nome-da-branch
+git checkout nome-da-sua-branch
 git merge main  
 ```
 
