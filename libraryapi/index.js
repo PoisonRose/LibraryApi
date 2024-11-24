@@ -3,12 +3,12 @@ const sequelize = require('./config/database');
 require('dotenv').config();
 
 //importação de modelos
-const Livro = require('./models/Livro');
-const Usuario = require('./models/Usuario');
+const { Usuario, Livro, Emprestimo } = require('./models/associations');
 
 //importação de rotas
 const usuariosRoutes = require('./routes/usuariosRoutes');
 const livrosRoutes = require('./routes/LivrosRoutes');
+const emprestimosRoutes = require('./routes/emprestimosRoutes');
 
 const PORT = process.env.PORT || 3000;
 
@@ -20,6 +20,7 @@ app.use(express.json());
 //rotas
 app.use('/usuarios', usuariosRoutes);
 app.use('/livros', livrosRoutes);
+app.use('/emprestimos', emprestimosRoutes);
 
 //teste de conexão e sincronização de modelos
 sequelize
