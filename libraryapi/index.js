@@ -9,6 +9,7 @@ const { Usuario, Livro, Emprestimo } = require('./models/associations');
 const usuariosRoutes = require('./routes/usuariosRoutes');
 const livrosRoutes = require('./routes/LivrosRoutes');
 const emprestimosRoutes = require('./routes/emprestimosRoutes');
+const relatoriosRoutes = require('./routes/relatoriosRoutes');
 
 const PORT = process.env.PORT || 3000;
 
@@ -21,6 +22,7 @@ app.use(express.json());
 app.use('/usuarios', usuariosRoutes);
 app.use('/livros', livrosRoutes);
 app.use('/emprestimos', emprestimosRoutes);
+app.use('/relatorios', relatoriosRoutes);
 
 //teste de conexão e sincronização de modelos
 sequelize
