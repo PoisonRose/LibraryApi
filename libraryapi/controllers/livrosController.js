@@ -20,7 +20,7 @@ exports.listarLivros = async(req, res) =>{
         res.status(500).json({ error: 'Erro ao buscar livros.' });
         console.log(err.message);
     }
-}
+};
 
 //READ/GET: buscar livro especificado.
 exports.buscarLivro = async(req, res) =>{
@@ -34,7 +34,7 @@ exports.buscarLivro = async(req, res) =>{
         res.status(500).json({ error: 'Erro ao buscar livro.' });
         console.log(err.message);
     }
-}
+};
 
 //UPDATE/PUT: atualiza livro especificado.
 exports.editarLivro = async(req, res) =>{
@@ -49,7 +49,7 @@ exports.editarLivro = async(req, res) =>{
         res.status(500).json({ error: 'Erro ao editar livro.' });
         console.log(err.message);
     }
-}
+};
 
 //DELETE: deleta livro especificado.
 exports.deletarLivro = async(req, res) =>{
@@ -64,4 +64,4 @@ exports.deletarLivro = async(req, res) =>{
         res.status(500).json({ error: 'Erro ao excluir livro.' });
         console.log(err.message);
     }
-}
+};
