@@ -38,6 +38,7 @@ exports.livrosMaisEmprestados = async (req, res) => {
     }
   };
 
+//usuários com empréstimos pendentes
 exports.usuariosComEmprestimosPendentes = async(req, res) =>{
     try{
         const usuarios = await Usuario.findAll({
