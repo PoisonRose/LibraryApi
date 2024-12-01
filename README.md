@@ -13,24 +13,65 @@ Para o projeto, os alunos devem criar uma API RESTful para gerenciar livros em u
 
 ## Como baixar o repositório
 
-**1. Clone o repositório:**   
+**Não esqueça de baixar os programas necessários para baixar o repositório e operar normalmente com o código e projeto.**  
+[Um editor de código](https://code.visualstudio.com/)  
+[Node.js](https://nodejs.org/pt)  
+[Git](https://git-scm.com/downloads)  
+[MySQL](https://www.mysql.com/downloads/)
+
+**1. Abra o terminal e entre numa pasta onde queira guardar o repositório:**  
+
+**2. Clone o repositório:**   
     `git clone https://github.com/PoisonRose/LibraryApi.git`  
    Isso criará uma cópia local do repositório na pasta onde você executou o comando.  
-**2. Acesse o diretório do repositório com o seguinte comando:**  
+**3. Acesse o diretório do repositório com o seguinte comando:**  
     `cd LibraryApi`
 
-Agora você está pronto para contribuir!
+**4. Abra o repositório no seu editor de código de escolha.**  
+
+**5. Instale os pré-requisitos:**  
+`npm install express mysql2 sequelize dotenv`  
+
+**6. Crie uma conexão MySQL usando MySQL Workbench ou MySQL terminal**
+
+**7. No MySQL, crie um banco de dados e o chame de *library***
+
+**8. Crie um arquivo *'.env'*, copie os conteúdos de *'.env.example'* nele e edite-o para ser de acordo com seus dados do MySQL**
+
+- *DB_HOST=localhost* Representa o seu computador local, ou seja, o servidor vai rodar diretamente no seu computador e só pode ser acessado por computadores ligados a ele.  
+
+- *DB_USER=seu_nome_usuario* Representa seu nome de usuário **da sua conexão MySQL**, o padrão é root, mas você deve usar o nome que estiver na sua conexão.
+
+- *DB_PASSWORD=sua_senha* Representa a senha **da sua conexão MySQL**, o padrão é não ter senha(''), mas você deve usar a senha para sua conexão.
+
+- *DB_NAME=nome_da_database*  Representa o nome do banco de dados, usamos library como padrão.
+
+- *DB_DIALECT=mysql*  Representa o dialeto que o Sequelize vai usar para interagir com o banco de dados.
+
+- *DB_PORT=porta_da_database* Representa a porta conectada **Na sua conexão com o banco de dados**, o padrão é 3306.
+
+**9. Pronto! Você já pode contribuir!**
 
 ## Pré-requisitos
+| Nome | Descrição |  
+|----- | -------|
+| Git | Ferramenta de versionamento de código |  |
+| Node.js | Ambiente de desenvolvimento para javascript | 
+| MySQL | Ferramenta para gerenciamento de banco de dados |  
+| Express | Framework de Back-end |  
+| mysql2 | Driver de conexão do projeto com o banco de dados |  
+| Sequelize | ORM para facilitar operações com o banco de dados |  
+| dotenv | biblioteca Node.js que carrega variáveis de ambiente  definidas num arquivo .env e permite armazenar configurações sensíveis de forma segura. |
 
-TO-DO
 
 ## Contribuindo
-Para contribuir com este projeto, siga os passos abaixo(IMPORTANTE: Antes de seguir os passos, não esqueça de baixar/clonar o repositório, seguindo os passos da sessão "Como baixar o repositório" acima!):  
+Para contribuir com este projeto, siga os passos abaixo(**IMPORTANTE:** Antes de seguir os passos, não esqueça de baixar/clonar o repositório, seguindo os passos da sessão "Como baixar o repositório" acima!):  
 
-**1. Vá para/crie sua branch designada:**  
+**1. Crie sua branch designada:**  
 `git checkout -b nome-da-branch`  
-**por favor evite criação de branches sem necessidade, uma branch para cada dev é o padrão**
+**Por favor evite criação de branches sem necessidade, uma branch para cada dev é o padrão, o Gerente de Configuração edita a branch principal diretamente.**  
+Após criar a branch, sempre que quiser ir até ela sem criar mais branches, use o comando:  
+`git checkout nome-da-branch`
 
 **2. Antes de começar a trabalhar, atualize sua branch com as últimas mudanças da branch *main* para evitar conflitos:**  
 **IMPORTANTE**: repita esse processo antes de fazer seu commit final, garantindo que você está com o código atualizado antes de enviar as mudanças.
