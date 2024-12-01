@@ -108,7 +108,7 @@ git merge main
 
 | Nome | Papel |
 | ----------- | ----------- |
-| André Silva | Documentador |  
+| André Marcilio da Silva Ferreira | Documentador |  
 | Fábio Coutinho Aroucha | Scrum master |
 | Heitor Lopes e Silva | Desenvolvedor |
 | Lucas Henrique Lins da Silva | Gerente de Configuração/Desenvolvedor |
