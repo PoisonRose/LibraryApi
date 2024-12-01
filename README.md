@@ -67,10 +67,10 @@ git merge main
 
 | Nome | Papel |
 | ----------- | ----------- |
-| Lucas Henrique Lins da Silva | Gerente de Configuração |
+| Lucas Henrique Lins da Silva | Gerente de Configuração/Desenvolvedor |
 | André Silva | Documentador |  
-| Fábio Coutinho Aroucha | Scrum master/Desenvolvedor |
-| Heitor Lopes e Silva | Scrum master/Desenvolvedor |
+| Fábio Coutinho Aroucha | Scrum master |
+| Heitor Lopes e Silva | Desenvolvedor |
 
 ## Licença
 
